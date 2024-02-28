@@ -1,0 +1,45 @@
+.hero {
+  width: 100%;
+  background-color: var(--color-primary-dark);
+
+  .section {
+    width: 100%;
+    max-width: 1280px;
+    margin: auto !important;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    .image {
+      position: absolute;
+      width: 1000px;
+      left: 100%;
+      bottom: -50%;
+      transform: scaleX(-1) translateX(78%);
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .text_container {
+      display: flex;
+      flex-direction: column;
+      color: var(--color-white);
+      max-width: 40%;
+      gap: 16px;
+
+      .title {
+        font-size: 50px;
+        font-weight: 700;
+      }
+
+      .description {
+        text-align: justify;
+        font-size: 16px;
+      }
+    }
+  }
+}

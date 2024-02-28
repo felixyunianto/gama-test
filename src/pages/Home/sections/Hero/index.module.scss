@@ -1,0 +1,80 @@
+@import "../../../../styles/animations.scss";
+
+.hero {
+  height: 100vh;
+  width: 100%;
+
+  video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+  .backdrop {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    gap: 12px;
+
+    .company_name {
+      font-weight: 300;
+      font-size: 20px;
+      @include animation("slide-left 1s ease 200ms backwards");
+    }
+
+    .title {
+      font-size: 48px;
+      font-weight: 700;
+      text-align: center;
+      @include animation("slide-left 1100ms ease 300ms backwards");
+    }
+
+    .description {
+      font-size: 24px;
+      width: 50%;
+      font-weight: 400;
+      text-align: center;
+      @include animation("slide-left 1200ms ease 400ms backwards");
+    }
+
+    .button_contact {
+      margin-top: 12px;
+      padding: 12px 32px;
+      background-color: var(--color-primary);
+      color: var(--color-white);
+      border-radius: 30px;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 100%;
+      @include animation("slide-left 1300ms ease 500ms backwards");
+
+      &:hover{
+        background-color: var(--color-primary-dark);
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .company_name {
+        font-size: 16px;
+      }
+
+      .title {
+        font-size: 32px;
+      }
+
+      .description {
+        font-size: 16px;
+        width: 90%;
+      }
+    }
+  }
+}

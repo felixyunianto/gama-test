@@ -1,0 +1,122 @@
+.services {
+  background-color: var(--color-white);
+  padding: 48px 0;
+  margin-bottom: 100px;
+  width: 100%;
+
+  .section {
+    max-width: 1280px;
+    margin: auto !important;
+    width: 100%;
+    padding: 48px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    .title {
+      font-size: 24px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .description {
+      margin-top: 10px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #5a5a5a;
+      text-align: center;
+    }
+
+    .service_list {
+      width: 100%;
+      margin-top: 32px;
+      display: grid;
+      gap: 32px;
+      grid-template-columns: repeat(2, 1fr);
+
+      .service_item {
+        flex: 1;
+        border-radius: 16px;
+        padding: 32px;
+        box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        position: relative;
+
+        &::before {
+          position: absolute;
+          content: "0" attr(data-count);
+          width: 100px;
+          height: 70px;
+          right: -10px;
+          background-color: #932388;
+          font-size: 48px;
+          line-height: 70px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          color: rgb(205, 205, 205);
+          font-weight: 700;
+          border-radius: 8px 0 0 8px;
+          padding-right: 16px;
+        }
+
+        .image {
+          width: 60px;
+          height: 60px;
+          position: relative;
+          margin-bottom: 24px;
+
+          &::before {
+            content: "";
+            width: 70px;
+            height: 70px;
+            background-color: var(--color-primary);
+            position: absolute;
+            border-radius: 35px;
+            left: 15px;
+            top: 10px;
+          }
+
+          img {
+            z-index: 1;
+            width: 60px;
+            height: 60px;
+            filter: saturate(0) invert(1);
+            object-fit: fill;
+          }
+        }
+
+        .title,
+        .description {
+          text-align: left;
+        }
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 24px;
+      width: 100% !important;
+    }
+
+    @media screen and (max-width: 425px) {
+      padding: 0 24px;
+      width: 100% !important;
+
+      .service_list {
+        width: 100%;
+        gap: 16px;
+        grid-template-columns: 1fr;
+
+        .service_item {
+          padding: 12px;
+        }
+      }
+    }
+  }
+}

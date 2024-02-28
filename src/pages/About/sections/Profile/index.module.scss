@@ -1,0 +1,314 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  background-color: var(--color-white);
+
+  .backdrop {
+    width: 100%;
+    background-color: var(--color-primary);
+    height: 100px;
+  }
+
+  .about_container {
+    max-width: 1280px;
+    margin: auto !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+    padding: 72px 0;
+
+    .text_container {
+      flex: 1;
+      flex-direction: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      max-width: 60%;
+
+      .label {
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: gray;
+      }
+
+      .company_name {
+        font-size: 28px;
+        font-weight: 600;
+      }
+
+      .divider {
+        width: 50px;
+        height: 6px;
+        background-color: gray;
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 120%;
+          width: 100px;
+          height: 6px;
+          background-color: gray;
+        }
+      }
+
+      .company_desc {
+        text-align: justify;
+        font-size: 18px;
+        margin-top: 16px;
+        color: rgb(48, 48, 48);
+        font-weight: 500;
+        font-style: italic;
+      }
+
+      .ttd {
+        font-style: italic;
+        font-weight: 600;
+        color: gray;
+      }
+    }
+
+    .image_container {
+      width: 500px;
+      margin-left: auto;
+      padding: 8px;
+      border-radius: 8px;
+      border: 8px dashed var(--color-primary);
+
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .portofolio_container {
+    width: 100%;
+    background-color: #0d0d0d;
+
+    .section {
+      max-width: 1280px;
+      margin: auto !important;
+      display: flex;
+      align-items: center;
+      color: var(--color-white);
+      padding: 48px 0;
+      justify-content: space-between;
+
+      .portofolio_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+
+        .title {
+          font-size: 32px;
+          line-height: 40px;
+          font-weight: 700;
+          color: var(--color-primary);
+        }
+
+        .description {
+          font-size: 16px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  .vission_mission_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1280px;
+    margin: auto !important;
+    gap: 120px;
+    padding: 80px 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: -50px;
+      border-radius: 30px;
+      transform: rotate(45deg);
+      height: 500px;
+      width: 500px;
+      background-color: #93238844;
+    }
+
+    .vission {
+      flex: 1;
+
+      .label {
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #0d0d0d;
+        margin-bottom: 16px;
+        font-weight: 600;
+      }
+
+      .title {
+        font-size: 60px;
+        font-weight: 700;
+        color: #0d0d0d;
+        margin-bottom: 16px;
+      }
+
+      p {
+        max-width: 500px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #5a5a5a;
+      }
+    }
+
+    .mission {
+      flex: 1;
+
+      &_row {
+        display: flex;
+        gap: 32px;
+      }
+
+      &_column {
+        flex: 1;
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        justify-content: flex-start !important;
+
+        .space {
+          height: 72px;
+        }
+      }
+
+      &_card {
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+        border-radius: 16px;
+        padding: 48px 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        background-color: white;
+
+        .number {
+          font-size: 48px;
+          line-height: 100%;
+          margin-bottom: 24px;
+          font-weight: 800;
+          color: #93238844;
+        }
+
+        .mission_title {
+          z-index: 1;
+          font-weight: 700;
+          font-size: 20px;
+          text-transform: uppercase;
+        }
+
+        p {
+          z-index: 1;
+          color: #5a5a5a;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1280px) {
+    padding: 72px 24px;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .about_container {
+      flex-direction: column;
+
+      .text_container {
+        max-width: 100%;
+      }
+
+      .image_container {
+        width: 100%;
+      }
+    }
+
+    .portofolio_container {
+      .section {
+        flex-direction: column;
+        gap: 24px;
+      }
+    }
+
+    .vission_mission_container {
+      flex-direction: column;
+
+      .vission {
+        width: 100%;
+
+        .title {
+          font-size: 24px;
+        }
+      }
+
+      .mission {
+
+        &_column {
+          .space {
+            display: none;
+          }
+        }
+
+        &_card{
+          height: 300px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .image_container {
+      display: none;
+    }
+
+    .portofolio_container {
+      .section {
+        flex-direction: column;
+        gap: 24px;
+      }
+    }
+
+    .vission_mission_container {
+      flex-direction: column;
+
+      .vission {
+        width: 100%;
+
+        .title {
+          font-size: 24px;
+        }
+      }
+
+      .mission {
+        &_row {
+          flex-direction: column;
+        }
+
+        &_column {
+          .space {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
