@@ -6,7 +6,7 @@
   overflow: hidden;
   position: relative;
   padding: 64px 8%;
-  margin-bottom: 100px;
+  margin-bottom: 288px;
 
   .section {
     display: flex;
@@ -70,5 +70,7 @@
     }
   }
 
-  
+  @media screen and (max-width: 425px) {
+    margin-bottom: 700px;
+  }
 }

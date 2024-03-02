@@ -1,8 +1,12 @@
 .services {
   background-color: var(--color-white);
   padding: 48px 0;
-  margin-bottom: 100px;
+  margin-bottom: 288px;
   width: 100%;
+
+  @media screen and (max-width: 425px) {
+    margin-bottom: 700px;
+  }
 
   .section {
     max-width: 1280px;

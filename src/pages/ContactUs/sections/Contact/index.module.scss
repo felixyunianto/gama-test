@@ -1,7 +1,12 @@
 .contact {
   width: 100%;
-  padding: 48px 0;
+  padding: 48px;
   background-color: var(--color-white);
+  margin-bottom: 288px;
+
+  @media screen and (max-width: 425px) {
+    margin-bottom: 700px;
+  }
 
   .section {
     width: 100%;
@@ -61,6 +66,27 @@
           }
         }
       }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 0;
+
+    .section {
+      width: 100%;
+      flex-direction: column;
+
+      .map {
+        border-radius: 0;
+        width: 100%;
+        flex: 1;
+        position: relative;
+
+      }
+    }
+
+    .text_container {
+      padding: 0 24px 48px;
     }
   }
 }

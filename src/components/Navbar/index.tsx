@@ -46,22 +46,22 @@ const Navbar = () => {
         </div>
 
         <div className={cn(styles.menu_links, isOpen && styles.active)}>
-          <NavLink to={"/"} className={cn(styles.menu_items, styles.active)}>
+          <NavLink onClick={() => setIsOpen(false)} to={"/"} className={cn(styles.menu_items, styles.active)}>
             Beranda
           </NavLink>
-          <NavLink to={"/about"} className={styles.menu_items}>
+          <NavLink onClick={() => setIsOpen(false)} to={"/about"} className={styles.menu_items}>
             Tentang
           </NavLink>
-          <NavLink to={"/service"} className={styles.menu_items}>
+          <NavLink onClick={() => setIsOpen(false)} to={"/service"} className={styles.menu_items}>
             Layanan
           </NavLink>
-          <NavLink to={"/client"} className={styles.menu_items}>
+          <NavLink onClick={() => setIsOpen(false)} to={"/client"} className={styles.menu_items}>
             Klien
           </NavLink>
-          <NavLink to={"/article"} className={styles.menu_items}>
+          <NavLink onClick={() => setIsOpen(false)} to={"/article"} className={styles.menu_items}>
             Artikel
           </NavLink>
-          <NavLink to={"/contact-us"} className={styles.menu_items}>
+          <NavLink onClick={() => setIsOpen(false)} to={"/contact-us"} className={cn(styles.menu_items, styles.contact_us)}>
             Kontak Kami
           </NavLink>
         </div>

@@ -82,6 +82,16 @@ export const BRANCH_OF_COMPANY = [
     title: "Grobogan",
     link: "https://maps.app.goo.gl/ShdusxU3rCv1zbrg6",
   },
+  {
+    latLong: [-6.237794, 106.8300219],
+    title: "Jakarta Selatan",
+    link: "https://maps.app.goo.gl/duub2KZNfCoNZVpJ7",
+  },
+  {
+    latLong: [-7.823083, 110.3653639],
+    title: "Yogyakarta",
+    link: "https://maps.app.goo.gl/ygdZTvdCAuTBYw9m6",
+  },
 ];
 
 export const SERVICES_LIST = [
@@ -112,7 +122,7 @@ export const SERVICES_LIST = [
       "Administrasi SLF Lainnya",
     ],
     bigImage: slfVector,
-    description: "Kami membantu dalam pembuatan sertifikat laik fungsi."
+    description: "Kami membantu dalam pembuatan sertifikat laik fungsi.",
   },
   {
     image: environmentImage,
@@ -129,7 +139,8 @@ export const SERVICES_LIST = [
       "SLO Cerobong",
     ],
     bigImage: environmentVector,
-    description: "Kami membantu dalam pengelolaan izin mengenai aspek lingkungan."
+    description:
+      "Kami membantu dalam pengelolaan izin mengenai aspek lingkungan.",
   },
   {
     image: industryImage,
@@ -141,7 +152,7 @@ export const SERVICES_LIST = [
       "Dan Izin lain-lainnya",
     ],
     bigImage: factoryVector,
-    description: "Kami melayani berbagai izin untuk mendirikan sebuah usaha."
+    description: "Kami melayani berbagai izin untuk mendirikan sebuah usaha.",
   },
   {
     image: menuImage,
@@ -155,9 +166,9 @@ export const SERVICES_LIST = [
       "Izin Operasional Klinik, Apotek, Rumah Sakit, Laboratorium, dll",
       "Pengurusan Izin TDG, PIRT, BPOM, Sertifikat Halal, HAKI, dll",
       "Sertifikat Laik Operasi Listrik dan Genset (SLO)",
-      "Dan Kepengurusan Izin lainnya."
+      "Dan Kepengurusan Izin lainnya.",
     ],
     bigImage: otherVector,
-    description: "Masih banyak lagi tentang pelayanan perizinan."
+    description: "Masih banyak lagi tentang pelayanan perizinan.",
   },
 ];

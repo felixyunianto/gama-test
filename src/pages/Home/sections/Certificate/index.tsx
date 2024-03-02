@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
-import certificateImage from "../../../../assets/images/certificate.jpeg";
+import certificateImage from "../../../../assets/images/side-1.jpeg";
 
 import styles from "./index.module.scss";
 import Reveal from "../../../../components/Reveal";
