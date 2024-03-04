@@ -45,7 +45,7 @@ const Footer = () => {
         </div>
         <div className={styles.col}>
           <div className={styles.title}>Jam Kerja</div>
-          <div>08.00 - 17.00, Senin - Jumat</div>
+          <div className={styles.description}>08.00 - 17.00, Senin - Jumat</div>
           <div className={styles.description}>
             Kami melayani pengurusan SLF atau sertifikat laik fungsi.
           </div>
