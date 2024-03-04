@@ -1,5 +1,5 @@
 import React from "react";
-
+import cn from "classnames";
 import contructionImage from "../../../../assets/images/construction.jpeg";
 
 import styles from "./index.module.scss";
@@ -98,7 +98,11 @@ const Profile = () => {
                   </p>
                 </>
               </Reveal>
-              <Reveal slider className={styles.mission_card} sliderFrom="right">
+              <Reveal
+                slider
+                className={cn(styles.mission_card, styles.show_mobile)}
+                sliderFrom="right"
+              >
                 <>
                   <div className={styles.number}>02</div>
                   <div className={styles.mission_title}>Pengembangan</div>
@@ -108,10 +112,7 @@ const Profile = () => {
                   </p>
                 </>
               </Reveal>
-            </div>
-            <div className={styles.mission_column}>
-              <div className={styles.space}></div>
-              <Reveal slider className={styles.mission_card}>
+              <Reveal slider className={cn(styles.mission_card, styles.show_tablet)}>
                 <>
                   <div className={styles.number}>03</div>
                   <div className={styles.mission_title}>Profesional</div>
@@ -122,6 +123,31 @@ const Profile = () => {
                   </p>
                 </>
               </Reveal>
+            </div>
+            <div className={styles.mission_column}>
+              <div className={styles.space}></div>
+              <Reveal slider className={cn(styles.mission_card, styles.show_tablet)} sliderFrom="right">
+                <>
+                  <div className={styles.number}>02</div>
+                  <div className={styles.mission_title}>Pengembangan</div>
+                  <p>
+                    Mengembangkan kawasan yang mampu menciptakan daya saing
+                    tinggi dan nilai tambah bagi masyarakat luas
+                  </p>
+                </>
+              </Reveal>
+              <Reveal slider className={cn(styles.mission_card, styles.show_mobile)}>
+                <>
+                  <div className={styles.number}>03</div>
+                  <div className={styles.mission_title}>Profesional</div>
+                  <p>
+                    Melayani dengan profesional dan fokus pada kualitas serta
+                    kepuasan konsumen dengan memegangprinsip empat pilar
+                    perusahaan
+                  </p>
+                </>
+              </Reveal>
+
               <Reveal slider className={styles.mission_card}>
                 <>
                   <div className={styles.number}>04</div>

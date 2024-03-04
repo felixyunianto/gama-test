@@ -1,6 +1,6 @@
 .branch {
   width: 100%;
-  padding: 48px 0;
+  padding: 48px 24px;
   background-color: var(--color-white);
 
   .section {
@@ -64,6 +64,22 @@
             font-size: 14px;
           }
         }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .section {
+      .branch_list {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .section {
+      .branch_list {
+        grid-template-columns: 1fr;
       }
     }
   }
