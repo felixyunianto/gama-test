@@ -1,0 +1,29 @@
+.hero {
+  margin-top: 84px;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white);
+  background-image: url("../../../../assets/images/article-background.jpeg");
+  background-size: fill;
+  background-position: center;
+  position: relative;
+
+  .title {
+    z-index: 1;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .description {
+    z-index: 1;
+    font-size: 16px;
+    font-size: 700;
+  }
+}

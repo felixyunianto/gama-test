@@ -1,5 +1,6 @@
 import React from "react";
 
+import { motion } from "framer-motion";
 import cn from "classnames";
 import Slider from "react-slick";
 
@@ -72,27 +73,62 @@ const Gallery = () => {
     <div className={styles.gallery}>
       <div className={styles.section}>
         <div className={styles.grid}>
-          <div className={cn(styles.gallery_item, styles.gallery_item_1)}>
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item, styles.gallery_item_1)}
+          >
             <img src={gallery1} alt="gallery-1" />
-          </div>
-          <div className={cn(styles.gallery_item, styles.gallery_item_2)}>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item, styles.gallery_item_2)}
+          >
             <img src={gallery2} alt="gallery-2" />
-          </div>
-          <div className={cn(styles.gallery_item, styles.gallery_item_3)}>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item, styles.gallery_item_3)}
+          >
             <img src={gallery3} alt="gallery-3" />
-          </div>
-          <div className={cn(styles.gallery_item, styles.gallery_item_4)}>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item, styles.gallery_item_4)}
+          >
             <img src={gallery4} alt="gallery-4" />
-          </div>
-          <div className={cn(styles.gallery_item, styles.gallery_item_5)}>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item, styles.gallery_item_5)}
+          >
             <img src={gallery5} alt="gallery-5" />
-          </div>
-          <div className={cn(styles.gallery_item, styles.gallery_item_6)}>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item, styles.gallery_item_6)}
+          >
             <img src={gallery6} alt="gallery-6" />
-          </div>
-          <div className={cn(styles.gallery_item, styles.gallery_item_7)}>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item, styles.gallery_item_7)}
+          >
             <img src={gallery7} alt="gallery-7" />
-          </div>
+          </motion.div>
         </div>
       </div>
       <div className={styles.carousel}>
@@ -153,25 +189,51 @@ const Gallery = () => {
         </div>
       </div>
       <div className={styles.section}>
-        <div className={(cn(styles.grid, styles.second_grid))}>
-          <div className={cn(styles.gallery_item, styles.gallery_item_8)}>
+        <div className={cn(styles.grid, styles.second_grid)}>
+          <motion.div
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item, styles.gallery_item_8)}
+          >
             <img src={gallery8} alt="gallery-8" />
-          </div>
-          <div className={cn(styles.gallery_item, styles.gallery_item_9)}>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item, styles.gallery_item_9)}
+          >
             <img src={gallery9} alt="gallery-9" />
-          </div>
-          <div className={cn(styles.gallery_item, styles.gallery_item_10)}>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item, styles.gallery_item_10)}
+          >
             <img src={gallery10} alt="gallery-10" />
-          </div>
-          <div className={cn(styles.gallery_item, styles.gallery_item_11)}>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item, styles.gallery_item_11)}
+          >
             <img src={gallery11} alt="gallery-11" />
-          </div>
-          <div className={cn(styles.gallery_item, styles.gallery_item_12)}>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }} className={cn(styles.gallery_item, styles.gallery_item_12)}>
             <img src={gallery12} alt="gallery-12" />
-          </div>
-          <div className={cn(styles.gallery_item, styles.gallery_item_13)}>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }} className={cn(styles.gallery_item, styles.gallery_item_13)}>
             <img src={gallery13} alt="gallery-13" />
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

@@ -41,7 +41,7 @@ const Branch = () => {
               >
                 <Popup>
                   {item.title} <br />
-                  <a href={item.link} target="_blank">
+                  <a href={item.link} target="_blank" rel="noreferrer">
                     Lihat di map
                   </a>
                 </Popup>

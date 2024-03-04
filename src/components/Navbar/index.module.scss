@@ -91,7 +91,8 @@
         }
 
         &.active {
-          font-weight: 600;
+          font-weight: 800;
+          color: var(--color-primary);
         }
 
         &.contact_us {
@@ -116,10 +117,7 @@
         height: 100vh;
         scale: 0;
         transform-origin: center;
-        background: linear-gradient(135deg, #7b2a7380 50%, transparent 0),
-          linear-gradient(-135deg, #7b2a7380 50%, transparent 0);
-        background-size: 3em 3em;
-        background-color: var(--color-primary);
+        background-color: var(--color-primary-dark);
         opacity: 0;
 
         &.active {
@@ -135,6 +133,10 @@
 
           &:hover {
             background-color: #93238823;
+          }
+
+          &.active {
+            color: var(--color-white);
           }
 
           &.contact_us {
@@ -167,8 +169,16 @@
         transition: transform 0.2s ease-in-out;
       }
 
+      
+
       @media screen and (max-width: 768px) {
         display: flex;
+
+        &.burger_contact {
+          .burger_bar {
+            background-color: var(--color-white);
+          }
+        }
 
         &.active {
           .burger_bar {

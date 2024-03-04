@@ -20,6 +20,10 @@ const Navbar = () => {
     setNavBg(window.scrollY > 80);
   };
 
+  const activeNavbar = (path: string) => {
+    return location.pathname === path;
+  };
+
   useEffect(() => {
     window.addEventListener("scroll", changeNavBackground);
     return () => {
@@ -32,13 +36,19 @@ const Navbar = () => {
       <div
         className={cn(
           styles.bg_nav,
-          (navBg || location?.pathname !== "/" && location?.pathname !== "/contact-us" ) && styles.active
+          (navBg ||
+            (location?.pathname !== "/" &&
+              location?.pathname !== "/contact-us")) &&
+            styles.active
         )}
       />
       <div
         className={cn(
           styles.navbar_container,
-          (navBg || location?.pathname !== "/" && location?.pathname !== "/contact-us" ) && styles.with_bg
+          (navBg ||
+            (location?.pathname !== "/" &&
+              location?.pathname !== "/contact-us")) &&
+            styles.with_bg
         )}
       >
         <div className={styles.logo}>
@@ -46,28 +56,71 @@ const Navbar = () => {
         </div>
 
         <div className={cn(styles.menu_links, isOpen && styles.active)}>
-          <NavLink onClick={() => setIsOpen(false)} to={"/"} className={cn(styles.menu_items, styles.active)}>
+          <NavLink
+            onClick={() => setIsOpen(false)}
+            to={"/"}
+            className={cn(
+              styles.menu_items,
+              activeNavbar("/") && styles.active
+            )}
+          >
             Beranda
           </NavLink>
-          <NavLink onClick={() => setIsOpen(false)} to={"/about"} className={styles.menu_items}>
+          <NavLink
+            onClick={() => setIsOpen(false)}
+            to={"/about"}
+            className={cn(
+              styles.menu_items,
+              activeNavbar("/about") && styles.active
+            )}
+          >
             Tentang
           </NavLink>
-          <NavLink onClick={() => setIsOpen(false)} to={"/service"} className={styles.menu_items}>
+          <NavLink
+            onClick={() => setIsOpen(false)}
+            to={"/service"}
+            className={cn(
+              styles.menu_items,
+              activeNavbar("/service") && styles.active
+            )}
+          >
             Layanan
           </NavLink>
-          <NavLink onClick={() => setIsOpen(false)} to={"/client"} className={styles.menu_items}>
+          <NavLink
+            onClick={() => setIsOpen(false)}
+            to={"/client"}
+            className={cn(
+              styles.menu_items,
+              activeNavbar("/client") && styles.active
+            )}
+          >
             Klien
           </NavLink>
-          <NavLink onClick={() => setIsOpen(false)} to={"/article"} className={styles.menu_items}>
+          <NavLink
+            onClick={() => setIsOpen(false)}
+            to={"/article"}
+            className={cn(
+              styles.menu_items,
+              activeNavbar("/article") && styles.active
+            )}
+          >
             Artikel
           </NavLink>
-          <NavLink onClick={() => setIsOpen(false)} to={"/contact-us"} className={cn(styles.menu_items, styles.contact_us)}>
+          <NavLink
+            onClick={() => setIsOpen(false)}
+            to={"/contact-us"}
+            className={cn(styles.menu_items, styles.contact_us)}
+          >
             Kontak Kami
           </NavLink>
         </div>
 
         <div
-          className={cn(styles.burger_menu, isOpen && styles.active)}
+          className={cn(
+            styles.burger_menu,
+            location.pathname === "/contact-us" && styles.burger_contact,
+            isOpen && styles.active
+          )}
           onClick={toggleMenu}
         >
           <div className={styles.burger_bar} />

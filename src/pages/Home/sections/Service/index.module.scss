@@ -8,7 +8,6 @@
     flex-direction: column;
     align-items: center;
     gap: 16px;
-    
 
     p,
     h1 {
@@ -48,6 +47,22 @@
 
         &:hover {
           background-color: #bcbbbb;
+
+          img {
+            animation: zoom 1s linear infinite ;
+
+            @keyframes zoom {
+              0% {
+                scale: (1.2);
+              }
+              50% {
+                scale: (1);
+              }
+              100% {
+                scale: (1.2);
+              }
+            }
+          }
         }
 
         img {
@@ -79,7 +94,5 @@
         grid-template-columns: repeat(1, 1fr);
       }
     }
-
-    
   }
 }

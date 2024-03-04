@@ -6,7 +6,6 @@
   overflow: hidden;
   position: relative;
   padding: 64px 8%;
-  margin-bottom: 288px;
 
   .section {
     display: flex;
@@ -68,9 +67,5 @@
         grid-template-columns: repeat(2, 1fr);
       }
     }
-  }
-
-  @media screen and (max-width: 425px) {
-    margin-bottom: 700px;
   }
 }

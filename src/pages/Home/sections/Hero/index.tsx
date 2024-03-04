@@ -1,21 +1,27 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useEffect } from "react";
 import videoBackground from "../../.././../assets/videos/hero-background.mp4";
 
 import styles from "./index.module.scss";
+import { useUtilContext } from "../../../../context";
 
 const Hero = () => {
+  const { setLoading } = useUtilContext();
+
+  useEffect(() => {
+    setLoading(true);
+  }, []);
+
   return (
-    <motion.div
-      className={styles.hero}
-      initial={{ opacity: 0, y: -100 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{
-        duration: 0.5,
-        delay: 0.2,
-      }}
-    >
-      <video loop muted autoPlay preload="auto">
+    <div className={styles.hero}>
+      <video
+        loop
+        muted
+        autoPlay
+        preload="auto"
+        onCanPlayThrough={() => {
+          setLoading(false);
+        }}
+      >
         <source src={videoBackground} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
@@ -28,7 +34,7 @@ const Hero = () => {
         </div>
         <button className={styles.button_contact}>Contact Us</button>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

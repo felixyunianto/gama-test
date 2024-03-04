@@ -24,8 +24,7 @@ const Hero = () => {
       }}
       className={styles.hero}
     >
-      <div className={styles.backdrop}></div>
-      <div className={styles.description}>Profile Perusahaan</div>
+      <div className={styles.description}>Article</div>
       <div className={styles.title}>PT. GAMA INDO MAHARDIKA</div>
     </motion.div>
   );

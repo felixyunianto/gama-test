@@ -1,4 +1,4 @@
-import React, { useReducer, useRef } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 
 import Reveal from "../../../../components/Reveal";

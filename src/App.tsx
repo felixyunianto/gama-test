@@ -3,6 +3,7 @@ import "./App.css";
 import Routers from "./routers";
 import { AnimatePresence } from "framer-motion";
 import { useEffect } from "react";
+import { ContextProvider } from "./context";
 
 function App() {
   const { pathname } = useLocation();
@@ -13,7 +14,9 @@ function App() {
 
   return (
     <AnimatePresence>
-      <Routers />
+      <ContextProvider>
+        <Routers />
+      </ContextProvider>
     </AnimatePresence>
   );
 }

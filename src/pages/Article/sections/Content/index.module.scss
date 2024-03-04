@@ -1,0 +1,129 @@
+.content {
+  width: 100%;
+  background-color: var(--color-white);
+
+  .section {
+    max-width: 1280px;
+    width: 100%;
+    margin: auto !important;
+    padding: 48px 24px;
+
+    .title {
+      font-size: 24px;
+      color: var(--color-primary);
+      font-weight: 600;
+      position: relative;
+      width: min-content;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background-color: var(--color-primary);
+        left: 110%;
+        top: 54%;
+        transform: translateY(-50%);
+      }
+    }
+
+    .description {
+      font-size: 16px;
+      margin-top: 8px;
+      color: #5a5a5a;
+    }
+
+    .grid {
+      margin-top: 32px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      max-width: 100%;
+
+      .grid_item {
+        width: 100%;
+        overflow: hidden;
+        grid-auto-columns: 1;
+        height: 450px;
+
+        img {
+          width: 100%;
+          height: 250px;
+          object-fit: cover;
+          border-radius: 8px;
+        }
+
+        .article {
+          &_title {
+            margin-top: 8px;
+            font-weight: 600;
+            font-size: 20px;
+            height: 24px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            width: 100%;
+          }
+          &_date {
+            margin-top: 4px;
+            margin-bottom: 8px;
+            font-weight: 500;
+            font-size: 14px;
+            color: #5a5a5a;
+          }
+
+          &_content {
+            text-align: justify;
+            display: -webkit-box;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            margin-bottom: 32px;
+          }
+        }
+
+        .read_more {
+          font-size: 16px;
+          font-weight: 600;
+          color: var(--color-primary);
+          cursor: pointer;
+          text-decoration: none;
+          position: relative;
+
+          &::after {
+            content: "\02C3";
+            position: absolute;
+            right: -10px;
+            top: 50%;
+            transform: translateY(-30%);
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .section {
+      .title {
+        font-size: 20px;
+      }
+
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .section {
+      .title {
+        font-size: 20px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}
