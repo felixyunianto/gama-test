@@ -2,7 +2,7 @@ import React from "react";
 import cn from "classnames";
 import logo from "../../assets/images/logo.png";
 import styles from "./index.module.scss";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -22,24 +22,24 @@ const Footer = () => {
           <div className="">
             <div className={styles.title}>Navigasi</div>
             <div className={styles.nav_list}>
-              <NavLink to="/" className={styles.link}>
+              <Link to="/" className={styles.link}>
                 Beranda
-              </NavLink>
-              <NavLink to="/about" className={styles.link}>
+              </Link>
+              <Link to="/about" className={styles.link}>
                 Tentang
-              </NavLink>
-              <NavLink to="/service" className={styles.link}>
+              </Link>
+              <Link to="/service" className={styles.link}>
                 Layanan
-              </NavLink>
-              <NavLink to="/client" className={styles.link}>
+              </Link>
+              <Link to="/client" className={styles.link}>
                 Klien
-              </NavLink>
-              <NavLink to="/article" className={styles.link}>
+              </Link>
+              <Link to="/article" className={styles.link}>
                 Artikel
-              </NavLink>
-              <NavLink to="/contact-us" className={styles.link}>
+              </Link>
+              <Link to="/contact-us" className={styles.link}>
                 Kontak Kami
-              </NavLink>
+              </Link>
             </div>
           </div>
         </div>
@@ -49,7 +49,7 @@ const Footer = () => {
           <div className={styles.description}>
             Kami melayani pengurusan SLF atau sertifikat laik fungsi.
           </div>
-          <button>Kontak Kami</button>
+          <Link to="/contact-us" className={styles.btn_contact_us}>Kontak Kami</Link>
         </div>
       </div>
     </div>

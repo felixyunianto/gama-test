@@ -199,3 +199,24 @@ export const ARTICLES = [
     backlink: false,
   },
 ];
+
+export const BRANCH_LIST = [
+  {
+    title: "Kota Tegal",
+    address: "Jl. Mataram, Pesurungan Lor, Margadana, Tegal, Jawa Tengah 52147",
+    phone_number: "0812-3499-2966",
+  },
+  {
+    title: "Grobogan",
+    address: "Jl. A.Yani, Ruko Ayodya 2 No.9, Kuripan, Grobogan, Jawa Tengah 58112",
+    phone_number: "0852-2851-9877",
+  },
+  {
+    title: "Yogyakarta",
+    address: "Jl. Monjali, Ruko Gemawang no 1 & 2 Sinduadi Mlati, Sleman, Yogjakarta",
+  },
+  {
+    title: "DKI Jakarta",
+    address: "Patra Kuningan, Kecamatan Setiabudi, Jakarta Selatan, DKI Jakarta 12950",
+  },
+];

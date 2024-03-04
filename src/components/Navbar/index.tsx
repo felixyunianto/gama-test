@@ -9,7 +9,7 @@ import styles from "./index.module.scss";
 const Navbar = () => {
   const location = useLocation();
 
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const [navBg, setNavBg] = useState(false);
 
   const toggleMenu = () => {

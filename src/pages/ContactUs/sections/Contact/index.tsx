@@ -58,7 +58,7 @@ const Contact = () => {
               <div className={styles.icon}>
                 <img src={phoneIcon} alt="" />
               </div>
-              <div className={styles.text}> (0283) 4536870</div>
+              <div className={styles.text}> 0811-1911-161</div>
             </div>
             <div className={styles.contact_item}>
               <div className={styles.icon}>
@@ -71,8 +71,7 @@ const Contact = () => {
                 <img src={markerIcon} alt="" />
               </div>
               <div className={styles.text}>
-                Jl. Mataram No. 9 – Pesurungan Lor, Margadana Kota Tegal, Jawa
-                Tengah 52147
+                Jl. Supriyadi plangitan pati kec. Pati kab. Pati Jawa tengah
               </div>
             </div>
             <div className={styles.contact_item}>

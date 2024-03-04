@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
-import videoBackground from "../../.././../assets/videos/hero-background.mp4";
+import videoBackground from "../../.././../assets/videos/hero-background_1.mp4";
 
 import styles from "./index.module.scss";
 import { useUtilContext } from "../../../../context";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const { setLoading } = useUtilContext();
@@ -32,7 +33,7 @@ const Hero = () => {
           Our team consists of great talents with experience in Architecture,
           Civil, MEP, and Geosciences, we would love to hear from you!
         </div>
-        <button className={styles.button_contact}>Contact Us</button>
+        <Link to="/contact-us" className={styles.button_contact}>Contact Us</Link>
       </div>
     </div>
   );

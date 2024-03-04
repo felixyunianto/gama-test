@@ -1,0 +1,70 @@
+.branch {
+  width: 100%;
+  padding: 48px 0;
+  background-color: var(--color-white);
+
+  .section {
+    width: 100%;
+    max-width: 1280px;
+    margin: auto !important;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 24px;
+
+    .title {
+      z-index: 1;
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .branch_list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+
+      .branch_item {
+        z-index: 1;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        padding: 8px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.5);
+        -webkit-backdrop-filter: blur(4px);
+        backdrop-filter: blur(4px);
+        position: relative;
+        overflow: hidden;
+
+        svg {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+
+        .text_container {
+          z-index: 1;
+          background: rgba(255, 255, 255, 0.5);
+          -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+          padding: 8px;
+          border-radius: 8px;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+
+          .name {
+            z-index: 1;
+            font-size: 16px;
+            font-weight: 600;
+          }
+
+          .address,
+          .phone_number {
+            z-index: 1;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
