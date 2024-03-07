@@ -117,7 +117,7 @@ export const SERVICES_LIST = [
     subchild: [
       "Gambar As Build Drawing Arsitektur",
       "Gambar As Build Drawing Struktur",
-      "Gambbar As Build MEP",
+      "Gambar As Build MEP",
       "Perhitungan dan Pengujian Struktur, Arsitektur, dan MEP",
       "Kajian / Laporan Pemeriksaan Bangunan sesuai daftar SIMAK",
       "Laporan Kelaikan Fungsi Bangunan",
@@ -223,5 +223,43 @@ export const BRANCH_LIST = [
     address:
       "Patra Kuningan, Kecamatan Setiabudi, Jakarta Selatan, DKI Jakarta 12950",
     phone_number: "0896-0119-7275",
+  },
+];
+
+export const CAREERS = [
+  {
+    title: "Marketing",
+    description: "Melakukan penawaran produk dan layanan.",
+    email: "hrdptgim.jogja@gmail.com",
+    phone_number: "0852 9350 7911",
+    address: "Gg. Jeruk, Plangitan, Kec. Pati, Kab. Pati",
+    qualifications: [
+      "Perempuan / Laki-laki usia maks. 30 Tahun",
+      "Pendidikan min SMA/Sederajat",
+      "Memiliki pengalaman dibidang marketing min. 1 Tahun",
+      "Memiliki strategi dan jaringan pasar luas",
+      "Memiliki kendaraan transportasi pribadi",
+      "Memiliki kemampuan editing foto & video",
+      "Memiliki SIM C (wajib) SIM A (opsional)",
+      "Bersedia melakukan perjalanan dinas & bekeria dibawah tekanan",
+      "Aktif dan bisa bekerjasama tim",
+    ],
+  },
+  {
+    title: "Driver",
+    description: "Mengemudikan kendaraan kantor",
+    email: "hrdptgim.jogja@gmail.com",
+    phone_number: "0852 9350 7911",
+    address:
+      "Monjali St, Ruko Gemawang No. 01, dan No.2, Gemawang, Sinduadi, Kec. Mati, Kab. Sleman",
+    qualifications: [
+      "Laki-laki",
+      "Pendidikan min. SMA",
+      "Memiliki pengalaman di bidang terkait min. 2 tahun",
+      "Memiliki SIM C dan SIM A",
+      "Bertanggung jawab dan bisa bekerja sama tim",
+      "Teliti, jujur, bertanggung jawab",
+      "Memiliki kemampuan komunikasi yang baik",
+    ],
   },
 ];

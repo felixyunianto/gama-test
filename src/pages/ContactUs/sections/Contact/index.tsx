@@ -44,7 +44,7 @@ const Contact = () => {
             Drawing), Konsultan Persetujuan Bangunan Gedung dan Sertifikat Laik
             Fungsi Bangunan, Dokumen Lingkungan telah kami selesaikan dengan
             baik.Pada tahun 2019 kami meresmikan nama Perusahaan Kami adalah PT
-            Geospasial Insan Mulia sebagai merk Perusahaan Konsultansi kami dan
+            Gama Indo Mahardika sebagai merk Perusahaan Konsultansi kami dan
             di bawah legalitas resmi. Berbagai klien mulai dari perorangan,
             perusahaan kecil hingga perusahaan besar, bangunan pemerintah /
             dinas, Pemilik Modal Dalam Negeri (PMDM) dan Pemilik Modal Asing

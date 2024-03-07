@@ -108,6 +108,16 @@ const Navbar = () => {
           </NavLink>
           <NavLink
             onClick={() => setIsOpen(false)}
+            to={"/career"}
+            className={cn(
+              styles.menu_items,
+              activeNavbar("/career") && styles.active
+            )}
+          >
+            Karir
+          </NavLink>
+          <NavLink
+            onClick={() => setIsOpen(false)}
             to={"/contact-us"}
             className={cn(styles.menu_items, styles.contact_us)}
           >

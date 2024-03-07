@@ -10,6 +10,7 @@ import ContactUs from "../pages/ContactUs";
 import Client from "../pages/Client";
 import Article from "../pages/Article";
 import ArticleDetail from "../pages/Article/ArticleDetail";
+import Career from "../pages/Career";
 
 const Routers = () => {
   return (
@@ -23,6 +24,7 @@ const Routers = () => {
         <Route path="/client" element={<Client />} />
         <Route path="/article" element={<Article />} />
         <Route path="/article/:slug" element={<ArticleDetail />} />
+        <Route path="/career" element={<Career />} />
       </Routes>
       <Footer />
     </React.Fragment>
