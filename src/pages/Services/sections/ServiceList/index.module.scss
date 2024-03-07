@@ -46,6 +46,7 @@
         flex-direction: column;
         gap: 8px;
         position: relative;
+        cursor: pointer;
 
         &::before {
           position: absolute;
@@ -65,18 +66,18 @@
           padding-right: 16px;
         }
 
-        &:hover{
+        &:hover {
           .image > img {
             animation: zoom 2s linear infinite;
 
             @keyframes zoom {
-              0%{
+              0% {
                 transform: scale(1);
               }
-              50%{
+              50% {
                 transform: scale(1.2);
               }
-              100%{
+              100% {
                 transform: scale(1);
               }
             }
@@ -129,10 +130,105 @@
         width: 100%;
         gap: 16px;
         grid-template-columns: 1fr;
+        margin-bottom: 16px;
 
         .service_item {
           padding: 12px;
         }
+      }
+    }
+  }
+
+  .modal {
+    transform: scale(0);
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+
+    &.active {
+      transform: scale(1);
+
+      .modal_content {
+        transform: scale(1);
+      }
+    }
+
+    &_content {
+      background-color: var(--color-white);
+      margin: 15% auto;
+      padding: 20px;
+      width: 50%;
+      border-radius: 8px;
+      transform: scale(0);
+      transition: 0.5s;
+
+      &_close {
+        color: #5a5a5a;
+        float: right;
+        font-size: 24px;
+        font-weight: bold;
+
+        &:hover,
+        &:focus {
+          color: black;
+          text-decoration: none;
+          cursor: pointer;
+        }
+      }
+
+      .sub_title {
+        margin-top: 16px;
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      .subchild {
+        margin-top: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        &_item {
+          display: block;
+          position: relative;
+          padding-left: 16px;
+
+          &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 8px;
+            background-color: var(--color-primary);
+            width: 8px;
+            height: 8px;
+            border-radius: 8px;
+          }
+        }
+      }
+    }
+
+    &_title {
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    &_description {
+      font-size: 16px;
+      font-weight: 500;
+      color: #5a5a5a;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .modal {
+      &_content {
+        width: 80%;
       }
     }
   }

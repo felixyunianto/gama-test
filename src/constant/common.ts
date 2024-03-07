@@ -102,7 +102,7 @@ export const SERVICES_LIST = [
     image: buildingImage,
     title: "IMB/PBG",
     subchild: [
-      "PKKPR/SKRK/KRK/SKIR/TTR/FPR/Izin tata Ruang Lainnya.",
+      "PKKPR / SKRK / KRK / SKIR / TTR / FPR / Izin tata Ruang Lainnya.",
       "Gambar detail Arsitektur + SKA",
       "Gambar & Perhitungan Struktur + SKA",
       "Gambar MEP + SKA",
@@ -215,11 +215,13 @@ export const BRANCH_LIST = [
   {
     title: "Yogyakarta",
     address:
-      "Jl. Monjali, Ruko Gemawang no 1 & 2 Sinduadi Mlati, Sleman, Yogjakarta",
+      "Monjali St, Ruko Gemawang No.01, dan No.2, Gemawang, Sinduadi, Kec. Mlati, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55581",
+    phone_number: "0895-3430-06920",
   },
   {
     title: "DKI Jakarta",
     address:
       "Patra Kuningan, Kecamatan Setiabudi, Jakarta Selatan, DKI Jakarta 12950",
+    phone_number: "0896-0119-7275",
   },
 ];

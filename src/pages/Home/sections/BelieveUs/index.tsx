@@ -8,7 +8,7 @@ import ayolaImage from "../../../../assets/images/clients/ayola.png";
 import bigImage from "../../../../assets/images/clients/badan-informasi-geospasial.png";
 import epsonImage from "../../../../assets/images/clients/epson.png";
 import indosatImage from "../../../../assets/images/clients/indosat.png";
-import komitelImage from "../../../../assets/images/clients/komitel.png";
+import mitratelImage from "../../../../assets/images/clients/mitratel.png";
 import pertaminaImage from "../../../../assets/images/clients/pertamina-persero.png";
 import pratamaImage from "../../../../assets/images/clients/pratama.png";
 import salokaImage from "../../../../assets/images/clients/saloka.png";
@@ -22,7 +22,7 @@ const IMAGES = [
   bigImage,
   epsonImage,
   indosatImage,
-  komitelImage,
+  mitratelImage,
   pertaminaImage,
   pratamaImage,
   salokaImage,

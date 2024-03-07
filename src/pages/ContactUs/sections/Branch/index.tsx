@@ -6,6 +6,14 @@ import styles from "./index.module.scss";
 import { BRANCH_LIST } from "../../../../constant/common";
 
 const Branch = () => {
+  const onClickPhoneNumber = (phone_number: any) => {
+    let number = phone_number.replace(/[^\w\s]/gi, "").replace(/ /g, "");
+
+    let url = `https://wa.me/${number}`;
+
+    window.open(url);
+  };
+
   return (
     <div className={styles.branch}>
       <div className={styles.section}>
@@ -37,7 +45,9 @@ const Branch = () => {
               <div className={styles.text_container}>
                 <div className={styles.name}>{branch.title}</div>
                 <div className={styles.address}>{branch.address}</div>
-                <div className={styles.phone_number}>{branch.phone_number}</div>
+                <div className={styles.phone_number} onClick={() => {
+                  onClickPhoneNumber(branch.phone_number)
+                }}>{branch.phone_number}</div>
               </div>
             </motion.div>
           ))}

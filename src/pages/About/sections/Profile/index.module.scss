@@ -97,7 +97,7 @@
       display: flex;
       align-items: center;
       color: var(--color-white);
-      padding: 48px 0;
+      padding: 48px 24px;
       justify-content: space-between;
 
       .portofolio_item {
@@ -233,8 +233,20 @@
       }
     }
   }
+
   @media screen and (max-width: 1280px) {
     padding: 72px 24px;
+
+    .vission_mission_container {
+      .vission {
+        .title {
+          font-size: 48px;
+        }
+      }
+      .mission {
+        flex: 2;
+      }
+    }
   }
 
   @media screen and (max-width: 768px) {

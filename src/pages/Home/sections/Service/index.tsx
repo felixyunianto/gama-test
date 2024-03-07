@@ -36,6 +36,7 @@ const Service = () => {
               }}
             >
               <img src={service.img} alt={service.title} />
+              <div className={styles.title}>{service.title}</div>
               <div className={styles.text_container}>
                 <div className={styles.service_item_title}>{service.title}</div>
                 <p className={styles.service_item_description}>
