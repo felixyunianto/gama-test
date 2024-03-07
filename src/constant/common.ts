@@ -25,27 +25,27 @@ import gedungImage from "../assets/images/article/gedung.jpeg";
 
 export const SERVICE_IN_HOME_LIST = [
   {
-    title: "Desain & Perencanaan",
+    title: "Sertifikasi Profesi",
     description:
-      "Desain konstruksi, perhitungan, pemetaan, desain lanskap, pengawasan",
-    img: designPlanningImage,
-  },
-  {
-    title: "Izin Lingkungan",
-    description:
-      "Pengurusan AMDAL, Andalalin, UKL-UPL, monitoring lingkungan, Pertimbangan Teknis",
+      "Meliputi berbagai sertifikasi dari SKK, Serkom DJK ESDM, SKK K3 BNSP, Ahli K3 Umum, SKK BNSP, Petugas Damkar, Petugas P3K, hingga Auditor SMK3",
     img: environmentPrivImage,
   },
   {
-    title: "Izin Bangunan",
+    title: "Sertifikasi Badan Usaha",
     description:
-      "Pengurusan SLF, IMB atau PBG, audit bangunan, lisensi K3, dsb",
+      "Sertifikasi untuk PBG (Perizinan Bangunan Gedung) & SLF (Sertifikasi Laik Fungsi), Asuransi Kontruksi, Pendirian dan  Perubahan PT/ CV, SBU Jasa Kontruksi, dan SBU JPTL, ISO Akreditasi/Non Akreditasi,Audit SMK3, Akuntan Publik, SMK3, Skup Migas, CSMS, dan LKPM",
+    img: designPlanningImage,
+  },
+  {
+    title: "Produk Penerbitan Bank Garansi & Surety Bond",
+    description:
+      "Melayani berbagai jaminan seperti Jaminan Penawaran / Bid Bond, Jaminan Uang Muka / Advance Payment Bond, dan Jaminan Pemeliharaan / Maintenance Bond.",
     img: buildingPrivImage,
   },
   {
-    title: "Manajemen Konstruksi",
+    title: "Sertifikasi Alat",
     description:
-      "Analisis dan bantuan proyek pembangunan yang menempatkan aspek keberlanjutan",
+      "Tidak hanya perizinan bangunan, kami juga melayani sertifikasi alat seperti Riksa Uji Alat (JADETABEK)",
     img: constructionManagementImage,
   },
 ];
@@ -208,15 +208,18 @@ export const BRANCH_LIST = [
   },
   {
     title: "Grobogan",
-    address: "Jl. A.Yani, Ruko Ayodya 2 No.9, Kuripan, Grobogan, Jawa Tengah 58112",
+    address:
+      "Jl. A.Yani, Ruko Ayodya 2 No.9, Kuripan, Grobogan, Jawa Tengah 58112",
     phone_number: "0852-2851-9877",
   },
   {
     title: "Yogyakarta",
-    address: "Jl. Monjali, Ruko Gemawang no 1 & 2 Sinduadi Mlati, Sleman, Yogjakarta",
+    address:
+      "Jl. Monjali, Ruko Gemawang no 1 & 2 Sinduadi Mlati, Sleman, Yogjakarta",
   },
   {
     title: "DKI Jakarta",
-    address: "Patra Kuningan, Kecamatan Setiabudi, Jakarta Selatan, DKI Jakarta 12950",
+    address:
+      "Patra Kuningan, Kecamatan Setiabudi, Jakarta Selatan, DKI Jakarta 12950",
   },
 ];

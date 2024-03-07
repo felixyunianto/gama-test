@@ -33,54 +33,56 @@
 
       .service_item {
         border-radius: 8px;
-        min-height: 280px;
-        padding: 24px;
-        padding-top: 60px;
+        // min-height: 300px;
+        padding: 70px 24px;
         display: flex;
         flex-direction: column;
         align-items: center;
         box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.32);
         -webkit-box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.32);
         -moz-box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.32);
-        text-align: center;
         cursor: pointer;
+        position: relative;
+        overflow: hidden;
 
         &:hover {
-          background-color: #bcbbbb;
-
-          img {
-            animation: zoom 1s linear infinite ;
-
-            @keyframes zoom {
-              0% {
-                scale: (1.2);
-              }
-              50% {
-                scale: (1);
-              }
-              100% {
-                scale: (1.2);
-              }
-            }
+          border: 1px dashed var(--color-primary);
+          .text_container {
+            transform: translateY(0);
+            opacity: 1;
           }
         }
 
         img {
-          width: 50px;
+          width: 60px;
         }
 
-        &_title {
-          color: var(--color-primary);
-          font-weight: 600;
-          font-size: 14px;
-          margin-top: 16px;
-          text-transform: uppercase;
-        }
+        .text_container {
+          border-radius: 8px;
+          bottom: 4px;
+          top: 4px;
+          left: 4px;
+          right: 4px;
+          position: absolute;
+          opacity: 0;
+          padding: 16px;
+          transform: translateY(30px);
+          transition: 0.5s;
+          background-color: white;
 
-        &_description {
-          font-size: 13px;
-          color: #464545;
-          margin-top: 8px;
+          .service_item_title {
+            color: var(--color-primary);
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+          }
+
+          .service_item_description {
+            font-size: 13px;
+            line-height: 20px;
+            color: #464545;
+            margin-top: 8px;
+          }
         }
       }
 
