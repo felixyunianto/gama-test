@@ -64,9 +64,6 @@ const Career = () => {
 
         <div className={styles.together}>
           <div className={styles.together_title}>Rapat Tahunan</div>
-          <div className={styles.together_description}>
-            Kami selalu mengadakan rapat tahunan.
-          </div>
           <div className={styles.together_grid}>
             <div className={cn(styles.grid_item, styles.grid_item_1)}>
               <img src={moy1Image} alt="moy-1" />
