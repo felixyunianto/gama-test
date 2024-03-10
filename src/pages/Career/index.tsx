@@ -1,30 +1,15 @@
 import React from "react";
 import cn from "classnames";
-import Slider from "react-slick";
-
-import stairImage from "../../assets/icon/stair_path.svg";
 
 import moy1Image from "../../assets/images/together/1.jpg";
 import moy2Image from "../../assets/images/together/2.jpg";
 import moy3Image from "../../assets/images/together/3.jpg";
 
+import heroRight from "../../assets/icon/career_hero_right.svg";
+import heroLeft from "../../assets/icon/career_hero_left.svg";
+
 import styles from "./index.module.scss";
 import { CAREERS } from "../../constant/common";
-
-const MEET_OF_YEAR_IMAGES = [
-  {
-    image: moy1Image,
-    width: 100,
-  },
-  {
-    image: moy2Image,
-    width: 200,
-  },
-  {
-    image: moy3Image,
-    width: 200,
-  },
-];
 
 const Career = () => {
   const [careerSelected, setCareerSelected] = React.useState<any>(null);
@@ -48,11 +33,13 @@ const Career = () => {
           <div className={styles.hero_description}>
             Temukan posisi mu sekarang
           </div>
-          <div className={styles.stair_path}>
-            <img src={stairImage} alt="" />
+
+          <div className={styles.hero_left}>
+            <img src={heroLeft} alt="" />
           </div>
-          <div className={cn(styles.stair_path, styles.second)}>
-            <img src={stairImage} alt="" />
+
+          <div className={styles.hero_right}>
+            <img src={heroRight} alt="" />
           </div>
         </div>
 
@@ -81,23 +68,19 @@ const Career = () => {
             Kami selalu mengadakan rapat tahunan.
           </div>
           <div className={styles.together_grid}>
-            <img
-              src={moy1Image}
-              alt="moy-1"
-              className={cn(styles.grid_item, styles.grid_item_1)}
-            />
-            <img
-              src={moy2Image}
-              alt="moy-2"
-              className={cn(styles.grid_item, styles.grid_item_2)}
-            />
-            <img
-              src={moy3Image}
-              alt="moy-3"
-              className={cn(styles.grid_item, styles.grid_item_3)}
-            />
+            <div className={cn(styles.grid_item, styles.grid_item_1)}>
+              <img src={moy1Image} alt="moy-1" />
+            </div>
+            <div className={cn(styles.grid_item, styles.grid_item_2)}>
+              <img src={moy2Image} alt="moy-2" />
+            </div>
+            <div className={cn(styles.grid_item, styles.grid_item_3)}>
+              <img src={moy3Image} alt="moy-3" />
+            </div>
 
-            <div className={cn(styles.grid_item, styles.grid_item_4)}>RAPAT TAHUNAN PT. GIM</div>
+            <div className={cn(styles.grid_item, styles.grid_item_4)}>
+              RAPAT TAHUNAN PT. GIM
+            </div>
           </div>
         </div>
       </div>

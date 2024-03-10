@@ -14,42 +14,35 @@
       gap: 12px;
       flex-direction: column;
       background-color: var(--color-primary);
-      border-radius: 24px;
+      border-radius: 32px;
       position: relative;
       overflow: hidden;
-
-      > img {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-      }
 
       &_title {
         text-transform: uppercase;
         font-size: 24px;
         color: var(--color-white);
         font-weight: 600;
+        z-index: 1;
       }
 
       &_description {
         font-size: 48px;
         font-weight: 500;
         color: var(--color-white);
+        z-index: 1;
       }
 
-      .stair_path {
+      &_left {
         position: absolute;
-        right: 24px;
-        bottom: 24px;
+        left: -110px;
+        top: -50px;
+      }
 
-        &.second {
-          transform-origin: 50% 50%;
-          transform: rotate(180deg);
-          right: auto;
-          left: 24px;
-          top: 24px;
-          bottom: auto;
-        }
+      &_right {
+        position: absolute;
+        right: -40px;
+        bottom: -70px;
       }
     }
 
@@ -60,23 +53,52 @@
       gap: 16px;
 
       .career_item {
-        border: 0.5px solid #5a5a5a;
         padding: 56px 24px;
         height: 250px;
         background-color: var(--color-white);
         display: flex;
         flex-direction: column;
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 0 5px var(--color-primary);
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 250px;
+          height: 205px;
+          background-color: #dedddd;
+          border-radius: 24px;
+          transform: rotate(48deg);
+          right: -110px;
+          top: -70px;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 295px;
+          height: 270px;
+          background-color: #e8e8e880;
+          border-radius: 24px;
+          transform: rotate(48deg);
+          left: 100px;
+          bottom: -80px;
+        }
 
         &_title {
           font-size: 24px;
           text-transform: uppercase;
           font-weight: 600;
+          z-index: 1;
         }
 
         &_description {
           font-size: 14px;
           color: #5a5a5a;
           margin-top: 16px;
+          z-index: 1;
         }
 
         &_button {
@@ -90,6 +112,7 @@
           overflow: hidden;
           font-weight: 600;
           transition: color 0.4s;
+          font-size: 16px;
 
           &::before {
             background: var(--color-primary);
@@ -110,6 +133,7 @@
               transform-origin: left;
             }
           }
+          z-index: 1;
         }
       }
     }
@@ -138,8 +162,9 @@
         .grid_item {
           width: 100%;
           height: 100%;
+          overflow: hidden;
 
-          img {
+          > img {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -183,7 +208,7 @@
             align-items: center;
             justify-content: center;
             font-weight: 700;
-            font-size: 52px;
+            font-size: 48px;
             border: 0.5px solid #5a5a5a;
           }
         }
@@ -245,20 +270,24 @@
 
       &_column {
         flex: 1;
+        font-size: 16px;
       }
 
       &_contact {
         margin-top: 8px;
         display: flex;
+        font-size: 16px;
 
         .first_col {
           min-width: 80px;
           position: relative;
+          font-size: 16px;
 
           &::after {
             content: ":";
             position: absolute;
             right: 8px;
+            font-size: 16px;
           }
         }
       }
@@ -317,9 +346,19 @@
     }
   }
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1440px) {
     .section {
-      padding: 24px;
+      padding: 48px 24px;
+
+      .together {
+        &_grid {
+          .grid_item {
+            &.grid_item_4 {
+              font-size: 24px;
+            }
+          }
+        }
+      }
     }
   }
 
@@ -401,16 +440,6 @@
         &_description {
           font-size: 24px;
           text-align: center;
-        }
-
-        .stair_path {
-          right: -7px;
-          bottom: -10px;
-
-          &.second {
-            left: -7px;
-            top: -10px;
-          }
         }
       }
 
