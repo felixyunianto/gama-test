@@ -53,7 +53,7 @@
       gap: 16px;
 
       .career_item {
-        padding: 56px 24px;
+        padding: 48px 24px;
         height: 250px;
         background-color: var(--color-white);
         display: flex;
@@ -91,6 +91,12 @@
           font-size: 24px;
           text-transform: uppercase;
           font-weight: 600;
+          z-index: 1;
+        }
+
+        &_placement {
+          font-size: 12px;
+          color: #5a5a5a;
           z-index: 1;
         }
 
@@ -306,6 +312,11 @@
       font-size: 24px;
       text-align: center;
       font-weight: 600;
+    }
+    &_placement {
+      font-size: 14px;
+      text-align: center;
+      color: #5a5a5a;
     }
 
     &_description {

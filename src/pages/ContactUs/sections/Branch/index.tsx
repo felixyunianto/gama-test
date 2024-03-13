@@ -11,6 +11,7 @@ const Branch = () => {
 
     let url = `https://wa.me/${number}`;
 
+
     window.open(url);
   };
 

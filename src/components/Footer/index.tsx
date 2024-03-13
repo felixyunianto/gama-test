@@ -37,6 +37,9 @@ const Footer = () => {
               <Link to="/article" className={styles.link}>
                 Artikel
               </Link>
+              <Link to="/career" className={styles.link}>
+                Karir
+              </Link>
               <Link to="/contact-us" className={styles.link}>
                 Kontak Kami
               </Link>

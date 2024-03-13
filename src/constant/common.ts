@@ -91,9 +91,9 @@ export const BRANCH_OF_COMPANY = [
     link: "https://maps.app.goo.gl/duub2KZNfCoNZVpJ7",
   },
   {
-    latLong: [-7.823083, 110.3653639],
+    latLong: [-7.7603962, 110.3696083],
     title: "Yogyakarta",
-    link: "https://maps.app.goo.gl/ygdZTvdCAuTBYw9m6",
+    link: "https://maps.app.goo.gl/c1ybfnfDbU8dZmrs6",
   },
 ];
 
@@ -204,31 +204,32 @@ export const BRANCH_LIST = [
   {
     title: "Kota Tegal",
     address: "Jl. Mataram, Pesurungan Lor, Margadana, Tegal, Jawa Tengah 52147",
-    phone_number: "0812-3499-2966",
+    phone_number: "+62 812-3499-2966",
   },
   {
     title: "Grobogan",
     address:
       "Jl. A.Yani, Ruko Ayodya 2 No.9, Kuripan, Grobogan, Jawa Tengah 58112",
-    phone_number: "0852-2851-9877",
+    phone_number: "+62 852-2851-9877",
   },
   {
     title: "Yogyakarta",
     address:
       "Monjali St, Ruko Gemawang No.01, dan No.2, Gemawang, Sinduadi, Kec. Mlati, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55581",
-    phone_number: "0895-3430-06920",
+    phone_number: "+62 895-3430-06920",
   },
   {
     title: "DKI Jakarta",
     address:
       "Patra Kuningan, Kecamatan Setiabudi, Jakarta Selatan, DKI Jakarta 12950",
-    phone_number: "0896-0119-7275",
+    phone_number: "+62 896-0119-7275",
   },
 ];
 
 export const CAREERS = [
   {
     title: "Marketing",
+    placement: 'Penempatan Pati, Grobogan, Tegal, Yogyakarta',
     description: "Melakukan penawaran produk dan layanan.",
     email: "hrdptgim.jogja@gmail.com",
     phone_number: "0852 9350 7911",
@@ -241,12 +242,13 @@ export const CAREERS = [
       "Memiliki kendaraan transportasi pribadi",
       "Memiliki kemampuan editing foto & video",
       "Memiliki SIM C (wajib) SIM A (opsional)",
-      "Bersedia melakukan perjalanan dinas & bekeria dibawah tekanan",
+      "Bersedia melakukan perjalanan dinas & bekerja dibawah tekanan",
       "Aktif dan bisa bekerjasama tim",
     ],
   },
   {
     title: "Driver",
+    placement: "Penempatan Yogyakarta",
     description: "Mengemudikan kendaraan kantor",
     email: "hrdptgim.jogja@gmail.com",
     phone_number: "0852 9350 7911",
@@ -260,6 +262,24 @@ export const CAREERS = [
       "Bertanggung jawab dan bisa bekerja sama tim",
       "Teliti, jujur, bertanggung jawab",
       "Memiliki kemampuan komunikasi yang baik",
+    ],
+  },
+  {
+    title: "Staff Lingkungan",
+    placement: "Penempatan Pati",
+    description: "Mengumpulkan data kegiatan bidang lingkungan",
+    email: "hroptgim.jogja@gmail.com",
+    phone_number: "0852 9350 7911",
+    address:
+      "Gg. Jeruk, Plangitan, Kec. Pati, Kab. Pati",
+    qualifications: [
+      "Perempuan / Laki-laki",
+      "Pendidikan min. S1 Biologi, fisika, kimia, kesehatan masyarakat.",
+      "Memiliki pengalaman di bidang terkait min. 2 tahun",
+      "Memiliki sertifikat keikutsertaan pelatihan kajian / lainnya (Nilai Plus)",
+      "Memiliki sertifikat keikutsertaan dalam penyusunan AMDAL (AMDAL)",
+      "Bertanggung jawab dan bisa bekerja sama tim",
+      "Mampu bekerja dengan target",
     ],
   },
 ];

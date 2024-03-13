@@ -47,6 +47,7 @@ const Career = () => {
           {CAREERS?.map((career, index) => (
             <div className={styles.career_item} key={index}>
               <div className={styles.career_item_title}>{career.title}</div>
+              <div className={styles.career_item_placement}>({career.placement})</div>
               <div className={styles.career_item_description}>
                 {career.description}
               </div>
@@ -88,6 +89,7 @@ const Career = () => {
             &times;
           </div>
           <div className={styles.modal_title}>{careerSelected?.title}</div>
+          <div className={styles.modal_placement}>({careerSelected?.placement})</div>
           <div className={styles.modal_description}>
             {careerSelected?.description}
           </div>
