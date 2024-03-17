@@ -1,4 +1,5 @@
 import React from "react";
+import cn from 'classnames'
 import { MapContainer, TileLayer, Marker } from "react-leaflet";
 import L from "leaflet";
 
@@ -19,6 +20,16 @@ let DefaultIcon = L.icon({
 L.Marker.prototype.options.icon = DefaultIcon;
 
 const Contact = () => {
+  const onClickPhoneNumber = () => {
+    let number = '+62 811-1911-161'.replace(/[^\w\s]/gi, "").replace(/ /g, "");
+
+    let url = `https://wa.me/${number}`;
+
+
+    window.open(url);
+  };
+
+
   return (
     <div className={styles.contact}>
       <div className={styles.section}>
@@ -58,13 +69,13 @@ const Contact = () => {
               <div className={styles.icon}>
                 <img src={phoneIcon} alt="" />
               </div>
-              <div className={styles.text}> 0811-1911-161</div>
+              <div className={cn(styles.text, styles.phone_number)} onClick={onClickPhoneNumber}>+62 811-1911-161</div>
             </div>
             <div className={styles.contact_item}>
               <div className={styles.icon}>
                 <img src={emailIcon} alt="" />
               </div>
-              <div className={styles.text}> gamaindomahardika@gmail.com</div>
+              <div className={styles.text}>gamaindomahardika@gmail.com</div>
             </div>
             <div className={styles.contact_item}>
               <div className={styles.icon}>
