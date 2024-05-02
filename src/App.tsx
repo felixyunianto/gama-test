@@ -5,6 +5,7 @@ import { AnimatePresence } from "framer-motion";
 import { useEffect } from "react";
 import { ContextProvider } from "./context";
 
+
 function App() {
   const { pathname } = useLocation();
 

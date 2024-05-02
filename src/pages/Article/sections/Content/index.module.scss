@@ -102,6 +102,48 @@
         }
       }
     }
+
+    .pagination {
+      margin: auto !important;
+      list-style: none;
+      height: 31.5px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+
+      .active {
+        background-color: var(--color-primary);
+        border-radius: 50%;
+        color: white;
+
+        &:hover {
+          color: white;
+        }
+      }
+
+      li {
+        display: block;
+      }
+
+      .page_number {
+        font-weight: 600px;
+        list-style: none;
+        height: 31.5px;
+        width: 31.5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+          color: var(--color-primary);
+        }
+      }
+    }
   }
 
   @media screen and (max-width: 768px) {

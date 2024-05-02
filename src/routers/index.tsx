@@ -11,8 +11,10 @@ import Client from "../pages/Client";
 import Article from "../pages/Article";
 import ArticleDetail from "../pages/Article/ArticleDetail";
 import Career from "../pages/Career";
+import NotFound from "../pages/NotFound";
 
 const Routers = () => {
+
   return (
     <React.Fragment>
       <Navbar />
@@ -21,10 +23,11 @@ const Routers = () => {
         <Route path="/about" element={<About />} />
         <Route path="/service" element={<Services />} />
         <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/article/:slug" element={<ArticleDetail />} />
         <Route path="/client" element={<Client />} />
         <Route path="/article" element={<Article />} />
-        <Route path="/article/:slug" element={<ArticleDetail />} />
         <Route path="/career" element={<Career />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </React.Fragment>

@@ -28,12 +28,15 @@ const Hero = () => {
       </video>
       <div className={styles.backdrop}>
         <div className={styles.company_name}>PT. GAMA INDO MAHARDIKA</div>
-        <div className={styles.title}>Growing More In Less Time</div>
-        <div className={styles.description}>
-          Our team consists of great talents with experience in Architecture,
-          Civil, MEP, and Geosciences, we would love to hear from you!
+        <div className={styles.title}>
+          Tumbuh Bersama Dalam Waktu Lebih Singkat
         </div>
-        <Link to="/contact-us" className={styles.button_contact}>Contact Us</Link>
+        <div className={styles.description}>
+          Kami terdiri dari talenta talenta pilihan yang berpengalaman, Kami akan sangat senang dengan pendapat Anda!
+        </div>
+        <Link to="/contact-us" className={styles.button_contact}>
+          Contact Us
+        </Link>
       </div>
     </div>
   );

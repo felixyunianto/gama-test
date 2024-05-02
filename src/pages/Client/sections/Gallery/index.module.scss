@@ -6,6 +6,12 @@
   .section {
     max-width: 1280px;
     margin: auto !important;
+    overflow: hidden;
+    padding: 48px 8px;
+
+    &.carousel_section{
+      padding: 0;
+    }
 
     .grid {
       display: grid;
@@ -15,6 +21,11 @@
       grid-gap: 15px;
 
       &.second_grid {
+        grid-template-rows: repeat(9, 5vw);
+      }
+
+      &.third_grid {
+        margin-top: 24px;
         grid-template-rows: repeat(9, 5vw);
       }
 
@@ -127,10 +138,102 @@
         grid-row-end: 10;
       }
 
+      .gallery_item_14 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+
+      .gallery_item_15 {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+
+      .gallery_item_16 {
+        grid-column-start: 5;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+      .gallery_item_17 {
+        grid-column-start: 7;
+        grid-column-end: 9;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+
+      .gallery_item_18 {
+        grid-column-start: 3;
+        grid-column-end: 7;
+        grid-row-start: 3;
+        grid-row-end: 7;
+      }
+
+      .gallery_item_19 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 5;
+      }
+      .gallery_item_20 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 5;
+        grid-row-end: 7;
+      }
+
+      .gallery_item_21 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 7;
+        grid-row-end: 9;
+      }
+      .gallery_item_22 {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 7;
+        grid-row-end: 9;
+      }
+      .gallery_item_23 {
+        grid-column-start: 5;
+        grid-column-end: 7;
+        grid-row-start: 7;
+        grid-row-end: 9;
+      }
+
+      .gallery_item_24 {
+        grid-column-start: 7;
+        grid-column-end: 9;
+        grid-row-start: 7;
+        grid-row-end: 9;
+      }
+
+      .gallery_item_25 {
+        grid-column-start: 7;
+        grid-column-end: 9;
+        grid-row-start: 5;
+        grid-row-end: 7;
+      }
+
+      .gallery_item_26 {
+        grid-column-start: 7;
+        grid-column-end: 9;
+        grid-row-start: 3;
+        grid-row-end: 5;
+      }
+
       @media screen and (max-width: 425px) {
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(14, 5vw);
         grid-gap: 8px;
+
+        &.third_grid {
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: auto;
+        }
 
         .gallery_item_1 {
           grid-column-start: 1;
@@ -194,34 +297,126 @@
           grid-row-start: 1;
           grid-row-end: 5;
         }
-  
+
         .gallery_item_10 {
           grid-column-start: 9;
           grid-column-end: 13;
           grid-row-start: 1;
           grid-row-end: 5;
         }
-  
+
         .gallery_item_11 {
           grid-column-start: 1;
           grid-column-end: 5;
           grid-row-start: 5;
           grid-row-end: 9;
         }
-  
+
         .gallery_item_12 {
           grid-column-start: 5;
           grid-column-end: 9;
           grid-row-start: 5;
           grid-row-end: 9;
         }
-  
+
         .gallery_item_13 {
           grid-column-start: 9;
           grid-column-end: 13;
           grid-row-start: 5;
           grid-row-end: 9;
         }
+
+        .gallery_item_18{
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 1;
+          grid-row-end: 5;
+        }
+
+        .gallery_item_14{
+          grid-column-start: 1;
+          grid-column-end: 1;
+          grid-row-start: auto !important;
+          grid-row-end: auto !important;
+        }
+
+        .gallery_item_15{
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: auto !important;
+          grid-row-end: auto !important;
+        }
+
+        .gallery_item_16{
+          grid-column-start: 1;
+          grid-column-end: 1;
+          grid-row-start: auto !important;
+          grid-row-end: auto !important;
+        }
+
+        .gallery_item_17{
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: auto !important;
+          grid-row-end: auto !important;
+        }
+
+        .gallery_item_19{
+          grid-column-start: 1;
+          grid-column-end: 1;
+          grid-row-start: auto !important;
+          grid-row-end: auto !important;
+        }
+
+        .gallery_item_20{
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: auto !important;
+          grid-row-end: auto !important;
+        }
+
+        .gallery_item_21{
+          grid-column-start: 1;
+          grid-column-end: 1;
+          grid-row-start: auto !important;
+          grid-row-end: auto !important;
+        }
+
+        .gallery_item_22{
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: auto !important;
+          grid-row-end: auto !important;
+        }
+
+        .gallery_item_23{
+          grid-column-start: 1;
+          grid-column-end: 1;
+          grid-row-start: auto !important;
+          grid-row-end: auto !important;
+        }
+
+        .gallery_item_24{
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: auto !important;
+          grid-row-end: auto !important;
+        }
+
+        .gallery_item_25{
+          grid-column-start: 1;
+          grid-column-end: 1;
+          grid-row-start: auto !important;
+          grid-row-end: auto !important;
+        }
+
+        .gallery_item_26{
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: auto !important;
+          grid-row-end: auto !important;
+        }
+        
       }
     }
   }
@@ -237,7 +432,7 @@
       margin: auto !important;
       color: white;
 
-      [class*="slick-slide"]{
+      [class*="slick-slide"] {
         height: 250px;
       }
 
@@ -255,6 +450,7 @@
 
   @media screen and (max-width: 768px) {
     .section {
+      overflow: hidden;
       .grid {
         padding: 0 24px;
       }

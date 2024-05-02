@@ -1,0 +1,78 @@
+.permen {
+  width: 100%;
+  padding: 64px 8%;
+
+  .section {
+    max-width: 1280px;
+    width: 100%;
+    margin: auto !important;
+    border-radius: 24px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 24px;
+    position: relative;
+    overflow: hidden;
+
+    .circle {
+      position: absolute;
+      height: 300px;
+      width: 300px;
+      background-color: var(--color-primary);
+      opacity: 0.5;
+      border-radius: 50%;
+      top: -40px;
+      right: -40px;
+      z-index: -1;
+
+      &.small {
+        left: -20px;
+        top: auto;
+        bottom: -40px;
+        height: 200px;
+        width: 200px;
+      }
+    }
+
+    .title {
+      font-size: 36px;
+      line-height: 40px;
+      text-transform: uppercase;
+      color: var(--color-primary);
+      font-weight: 700;
+      position: relative;
+      text-align: left;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 8px;
+        background-color: var(--color-primary);
+        left: 0;
+        bottom: -20px;
+        border-radius: 20px;
+      }
+    }
+
+    .description {
+      margin-top: 48px;
+      font-weight: 500;
+      margin-bottom: 24px;
+      font-size: 16px;
+    }
+
+    ol {
+      margin-top: 0px;
+      padding: 16px;
+
+      li {
+        z-index: 10;
+        padding: 12px 0 12px 12px;
+        font-size: 16px;
+
+        &:nth-child(1){
+            padding-top: 0;
+        }
+      }
+    }
+  }
+}

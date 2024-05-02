@@ -13,7 +13,7 @@ import pertaminaImage from "../../../../assets/images/clients/pertamina-persero.
 import pratamaImage from "../../../../assets/images/clients/pratama.png";
 import salokaImage from "../../../../assets/images/clients/saloka.png";
 import xlImage from "../../../../assets/images/clients/xl.png";
-import kadtrImage from '../../../../assets/images/clients/kementrian-agraris-dan-tata-ruang.png'
+import kadtrImage from "../../../../assets/images/clients/kementrian-agraris-dan-tata-ruang.png";
 import elleairImage from "../../../../assets/images/clients/elleair.png";
 import jfeImage from "../../../../assets/images/clients/jfe.png";
 import daiwaHouseImage from "../../../../assets/images/clients/daiwa-house.png";
@@ -23,6 +23,10 @@ import aksImage from "../../../../assets/images/clients/aks.png";
 import sibelcoImage from "../../../../assets/images/clients/sibelco.png";
 import chemcoImage from "../../../../assets/images/clients/chemco-harapan-nusantara.png";
 import gunungRajaPaksiImage from "../../../../assets/images/clients/gunung-raja-paksi.png";
+import briImage from "../../../../assets/images/clients/logo-bri.png";
+import bsiImage from "../../../../assets/images/clients/logo-bsi.png";
+import nestleImage from "../../../../assets/images/clients/nestle-logo.png";
+import hyundaiTransysImage from "../../../../assets/images/clients/hyundai-transys-logo.png";
 
 import styles from "./index.module.scss";
 
@@ -46,7 +50,11 @@ const IMAGES = [
   aksImage,
   sibelcoImage,
   chemcoImage,
-  gunungRajaPaksiImage
+  gunungRajaPaksiImage,
+  briImage,
+  bsiImage,
+  nestleImage,
+  hyundaiTransysImage,
 ];
 
 const BelieveUs = () => {
@@ -70,7 +78,7 @@ const BelieveUs = () => {
               key={`client-${index}`}
               initial={{
                 opacity: 0,
-                x: -100,
+                x: -30,
                 scale: 0,
               }}
               whileInView={{

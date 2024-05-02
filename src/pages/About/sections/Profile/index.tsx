@@ -42,28 +42,28 @@ const Profile = () => {
         <div className={styles.section}>
           <Reveal>
             <div className={styles.portofolio_item}>
-              <div className={styles.title}>100+</div>
-              <div className={styles.description}>Klien yang percaya</div>
+              <div className={styles.title}>500+</div>
+              <div className={styles.description}>Klien</div>
             </div>
           </Reveal>
           <Reveal>
             <div className={styles.portofolio_item}>
-              <div className={styles.title}>100+</div>
+              <div className={styles.title}>2000+</div>
               <div className={styles.description}>
-                Produk yang terimplementasi
+                Kontrak Selesai
               </div>
             </div>
           </Reveal>
           <Reveal>
             <div className={styles.portofolio_item}>
-              <div className={styles.title}>50+</div>
+              <div className={styles.title}>60+</div>
               <div className={styles.description}>Tenaga Ahli</div>
             </div>
           </Reveal>
           <Reveal>
             <div className={styles.portofolio_item}>
-              <div className={styles.title}>10+</div>
-              <div className={styles.description}>Mitra yang bekerja sama</div>
+              <div className={styles.title}>1000+</div>
+              <div className={styles.description}>Mitra</div>
             </div>
           </Reveal>
         </div>

@@ -10,7 +10,6 @@ const Footer = () => {
       <div className={styles.section}>
         <div className={styles.col}>
           <div className={styles.logo}>
-            <img src={logo} alt="logo-footer" />
           </div>
           <div className={styles.company_name}>PT. GAMA INDO MAHARDIKA</div>
           <div className={styles.company_desc}>
