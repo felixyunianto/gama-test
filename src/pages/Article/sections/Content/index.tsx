@@ -1,27 +1,29 @@
 import React, { useEffect, useState } from "react";
 import { ARTICLES } from "../../../../constant/common";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useSearchParams } from "react-router-dom";
 import { convertDate } from "../../../../helpers/convertDate";
 import ReactPaginate from "react-paginate";
 
 import styles from "./index.module.scss";
 
 const Content = () => {
+  
+  const [searchParams, setSearchParams] = useSearchParams();
+
   const [blogPosts, setBlogPosts] = useState<any>([]);
-  const [currentPage, setCurrentPage] = useState<number>(1);
   const [postsPerPage] = useState<number>(3);
 
-  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfLastPost = (searchParams.get("page") ? parseInt(searchParams.get("page")!) : 1) * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentPosts = ARTICLES.slice(indexOfFirstPost, indexOfLastPost);
 
   const paginate = ({ selected }: { selected: number }) => {
-    setCurrentPage(selected + 1);
+    setSearchParams({page: `${selected + 1}`})
   };
 
   useEffect(() => {
     setBlogPosts(ARTICLES);
-  }, [currentPage]);
+  }, []);
 
   return (
     <div className={styles.content}>
@@ -75,6 +77,8 @@ const Content = () => {
           previousLinkClassName={styles.page_number}
           nextLinkClassName={styles.page_number}
           activeLinkClassName={styles.active}
+          disabledClassName={styles.disabled}
+          forcePage={(searchParams.get("page") ? parseInt(searchParams.get("page")!) : 1) - 1}
         />
       </div>
     </div>

@@ -56,6 +56,59 @@ import gallery24 from "../../../../assets/images/gallery/add_new/11.jpeg";
 import gallery25 from "../../../../assets/images/gallery/add_new/12.jpeg";
 import gallery26 from "../../../../assets/images/gallery/add_new/13.jpeg";
 
+import new_1 from "../../../../assets/images/gallery/new_photos/1.jpeg";
+import new_2 from "../../../../assets/images/gallery/new_photos/2.jpeg";
+import new_3 from "../../../../assets/images/gallery/new_photos/3.jpeg";
+import new_4 from "../../../../assets/images/gallery/new_photos/4.jpeg";
+import new_5 from "../../../../assets/images/gallery/new_photos/5.jpeg";
+import new_6 from "../../../../assets/images/gallery/new_photos/6.jpeg";
+import new_7 from "../../../../assets/images/gallery/new_photos/7.jpeg";
+import new_8 from "../../../../assets/images/gallery/new_photos/8.jpeg";
+import new_9 from "../../../../assets/images/gallery/new_photos/9.jpeg";
+import new_10 from "../../../../assets/images/gallery/new_photos/10.jpeg";
+import new_11 from "../../../../assets/images/gallery/new_photos/11.jpeg";
+import new_12 from "../../../../assets/images/gallery/new_photos/12.jpeg";
+import new_13 from "../../../../assets/images/gallery/new_photos/13.jpeg";
+import new_14 from "../../../../assets/images/gallery/new_photos/14.jpeg";
+import new_15 from "../../../../assets/images/gallery/new_photos/15.jpeg";
+import new_16 from "../../../../assets/images/gallery/new_photos/16.jpeg";
+import new_17 from "../../../../assets/images/gallery/new_photos/17.jpeg";
+import new_18 from "../../../../assets/images/gallery/new_photos/18.jpeg";
+import new_19 from "../../../../assets/images/gallery/new_photos/19.jpeg";
+import new_20 from "../../../../assets/images/gallery/new_photos/20.jpeg";
+
+import new_21 from "../../../../assets/images/gallery/new_photos/21.jpg";
+import new_22 from "../../../../assets/images/gallery/new_photos/22.jpg";
+import new_23 from "../../../../assets/images/gallery/new_photos/23.jpg";
+import new_24 from "../../../../assets/images/gallery/new_photos/24.jpg";
+import new_25 from "../../../../assets/images/gallery/new_photos/25.jpg";
+import new_26 from "../../../../assets/images/gallery/new_photos/26.jpg";
+import new_27 from "../../../../assets/images/gallery/new_photos/27.jpg";
+import new_28 from "../../../../assets/images/gallery/new_photos/28.jpg";
+import new_29 from "../../../../assets/images/gallery/new_photos/29.jpg";
+import new_30 from "../../../../assets/images/gallery/new_photos/30.jpg";
+import new_31 from "../../../../assets/images/gallery/new_photos/31.jpg";
+import new_32 from "../../../../assets/images/gallery/new_photos/32.jpg";
+import new_33 from "../../../../assets/images/gallery/new_photos/33.jpg";
+import new_34 from "../../../../assets/images/gallery/new_photos/34.jpg";
+import new_35 from "../../../../assets/images/gallery/new_photos/35.jpg";
+import new_36 from "../../../../assets/images/gallery/new_photos/36.jpg";
+import new_37 from "../../../../assets/images/gallery/new_photos/37.jpg";
+import new_38 from "../../../../assets/images/gallery/new_photos/38.jpg";
+import new_39 from "../../../../assets/images/gallery/new_photos/39.jpg";
+import new_40 from "../../../../assets/images/gallery/new_photos/40.jpg";
+import new_41 from "../../../../assets/images/gallery/new_photos/41.jpg";
+import new_42 from "../../../../assets/images/gallery/new_photos/42.jpg";
+import new_43 from "../../../../assets/images/gallery/new_photos/43.jpg";
+import new_44 from "../../../../assets/images/gallery/new_photos/44.jpeg";
+import new_45 from "../../../../assets/images/gallery/new_photos/45.jpg";
+import new_46 from "../../../../assets/images/gallery/new_photos/46.jpg";
+import new_47 from "../../../../assets/images/gallery/new_photos/47.jpeg";
+import new_48 from "../../../../assets/images/gallery/new_photos/48.jpg";
+import new_49 from "../../../../assets/images/gallery/new_photos/49.jpg";
+import new_50 from "../../../../assets/images/gallery/new_photos/50.jpg";
+import new_51 from "../../../../assets/images/gallery/new_photos/51.jpeg";
+
 const Gallery = () => {
   const settings = {
     dots: false,
@@ -257,7 +310,7 @@ const Gallery = () => {
       </div>
       <div className={styles.section}>
         <div className={cn(styles.grid, styles.third_grid)}>
-        <motion.div
+          <motion.div
             initial={{ opacity: 0, scale: 0 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -373,6 +426,419 @@ const Gallery = () => {
             className={cn(styles.gallery_item, styles.gallery_item_26)}
           >
             <img src={gallery26} alt="gallery-26" />
+          </motion.div>
+        </div>
+      </div>
+
+      <div className={styles.section}>
+        <div className={cn(styles.grid, styles.fourth_grid)}>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_1} alt="new_1" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_2} alt="new_2" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_3} alt="new_3" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_4} alt="new_4" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_5} alt="new_5" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_6} alt="new_6" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_7} alt="new_7" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_8} alt="new_8" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_9} alt="new_9" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_10} alt="new_10" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_11} alt="new_11" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_12} alt="new_12" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_13} alt="new_13" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_14} alt="new_14" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_15} alt="new_15" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_16} alt="new_16" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_17} alt="new_17" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_18} alt="new_18" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_19} alt="new_19" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_20} alt="new_20" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_21} alt="new_21" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_22} alt="new_22" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_23} alt="new_23" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_24} alt="new_24" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_25} alt="new_25" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_26} alt="new_26" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_27} alt="new_27" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_28} alt="new_28" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_29} alt="new_29" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_30} alt="new_30" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_31} alt="new_31" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_32} alt="new_32" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_33} alt="new_33" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_34} alt="new_34" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_35} alt="new_35" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_36} alt="new_36" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_37} alt="new_37" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_38} alt="new_38" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_39} alt="new_39" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_40} alt="new_40" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_41} alt="new_41" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_42} alt="new_42" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_43} alt="new_43" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_44} alt="new_44" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_45} alt="new_45" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_46} alt="new_46" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_47} alt="new_47" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_48} alt="new_48" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_49} alt="new_49" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_50} alt="new_50" />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className={cn(styles.gallery_item)}
+          >
+            <img src={new_51} alt="new_51" />
           </motion.div>
         </div>
       </div>

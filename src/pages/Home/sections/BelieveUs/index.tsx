@@ -27,6 +27,7 @@ import briImage from "../../../../assets/images/clients/logo-bri.png";
 import bsiImage from "../../../../assets/images/clients/logo-bsi.png";
 import nestleImage from "../../../../assets/images/clients/nestle-logo.png";
 import hyundaiTransysImage from "../../../../assets/images/clients/hyundai-transys-logo.png";
+import mandiriImage from '../../../../assets/images/clients/mandiri-logo.png'
 
 import styles from "./index.module.scss";
 
@@ -55,6 +56,7 @@ const IMAGES = [
   bsiImage,
   nestleImage,
   hyundaiTransysImage,
+  mandiriImage
 ];
 
 const BelieveUs = () => {

@@ -15,17 +15,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 32px;
     
     svg {
       position: absolute;
       top: -50px;
       left: -50px;
-      width: 500px;
+      width: 600px;
       height: 500px;
     }
 
     .image {
-      width: 400px;
+      width: 450px;
       height: 400px;
       position: relative;
 
@@ -70,6 +71,20 @@
         text-transform: uppercase;
         color: var(--color-primary);
         font-weight: 600;
+      }
+    }
+
+    @media screen and (max-width: 820px) and (min-width: 768px) {
+      svg {
+        rect:last-child {
+          transform: translate(-50px, -30px);
+          // background-color: red;
+        }
+      }
+
+      .image {
+        width: 400px;
+        height: 370px;
       }
     }
 

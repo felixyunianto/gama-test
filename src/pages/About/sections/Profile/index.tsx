@@ -1,6 +1,6 @@
 import React from "react";
 import cn from "classnames";
-import contructionImage from "../../../../assets/images/construction.jpeg";
+import aboutImage from "../../../../assets/images/about.jpeg";
 
 import styles from "./index.module.scss";
 import Reveal from "../../../../components/Reveal";
@@ -34,7 +34,7 @@ const Profile = () => {
         </div>
         <Reveal sliderFrom="right" slider>
           <div className={styles.image_container}>
-            <img src={contructionImage} alt="" />
+            <img src={aboutImage} alt="" />
           </div>
         </Reveal>
       </div>
@@ -42,13 +42,13 @@ const Profile = () => {
         <div className={styles.section}>
           <Reveal>
             <div className={styles.portofolio_item}>
-              <div className={styles.title}>500+</div>
+              <div className={styles.title}>750+</div>
               <div className={styles.description}>Klien</div>
             </div>
           </Reveal>
           <Reveal>
             <div className={styles.portofolio_item}>
-              <div className={styles.title}>2000+</div>
+              <div className={styles.title}>2250+</div>
               <div className={styles.description}>
                 Kontrak Selesai
               </div>
@@ -56,13 +56,13 @@ const Profile = () => {
           </Reveal>
           <Reveal>
             <div className={styles.portofolio_item}>
-              <div className={styles.title}>60+</div>
+              <div className={styles.title}>85+</div>
               <div className={styles.description}>Tenaga Ahli</div>
             </div>
           </Reveal>
           <Reveal>
             <div className={styles.portofolio_item}>
-              <div className={styles.title}>1000+</div>
+              <div className={styles.title}>1550+</div>
               <div className={styles.description}>Mitra</div>
             </div>
           </Reveal>

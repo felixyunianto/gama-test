@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import certificateImage from "../../../../assets/images/gallery/2.jpg";
+import certificateImage2 from '../../../../assets/images/gallery/add_new/5.jpeg'
 
 import styles from "./index.module.scss";
 import Reveal from "../../../../components/Reveal";
@@ -44,7 +45,7 @@ const Certificate = () => {
             <motion.rect
               width="100"
               height="100"
-              x="370"
+              x="420"
               y="370"
               rx="20"
               stroke="#932387"
@@ -79,7 +80,7 @@ const Certificate = () => {
                 },
               }}
               viewport={{ once: false }}
-              src={certificateImage}
+              src={certificateImage2}
               alt="certificate-prove"
             />
           </div>
